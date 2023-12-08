@@ -3,20 +3,19 @@ personas = int(input( "personas: "))
 
 #Aqui verificamos que la cantidad sea mayor a 0 si no, no tiene sentido pedir nada
 while personas > 0:
-    #Le pedimos el nombre y lo guardamos en un input (Si usara Python 2.7 seria raw_input y no input pero usa python 3.7)
+    #Le pedimos el nombre 
     n = input("Su nombre por favor: ")
-    #Se pide al edad que siempre es un entero por eso el int() 
+    #Se pide edad  
     e = int(input("Su edad en años por favor: "))
-    #como la altura es en metros y no centimetros hay que ponerle punto y por ende es un flotante float()
+    #como la altura es en metros y no centimetros hay que ponerle punto 
     a = float(input ("Su altura en metros por favor: "))
-    #Aqui se duplica codigo pero bueno... decimos que est (de estatura) es igual a altura (No me diga)
+    #Aqui est (de estatura) es igual a altura (No me diga)
     est = a
     #La masa en kilogramos si puede tener decimales asi que la dejamos flotante
     m = float (input("Su masa en kilogramos por favor :"))
     #Calculo del IMC, masa (En kilogramos) entre la estatura (En metros) elevada al cuadrado
     IMC = m / est**2
     #Le decimos si es menor o mayor de edad, si es menor a 18 es menor, si no es mayor edad
-    #Solo ruegue porque a nadie se le ocurra meter numeros negativos, le va a decir que es menor de edad
     if(e < 18):
         print("Usted es menor de edad")
     else:
